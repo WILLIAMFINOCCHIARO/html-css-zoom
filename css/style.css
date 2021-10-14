@@ -20,6 +20,7 @@ body {
 main {
   width: 100vw;
   height: calc(100vh - 130px);
+  display: flex;
 }
 
 
@@ -53,10 +54,12 @@ header .bar-one,header .bar-two {
 
 /* start main */
 
+/* lateral simbols  */
 
+/* lateral simbols  */
 
 main .contenitor {
-  width: 80%;
+  width: 90%;
   height: 100%;
   margin: 0 auto;
   display: flex;
@@ -72,8 +75,13 @@ main .contenitor .image {
   margin:0 5px 5px 0;
 }
 
+main .simbol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
- 
 /* //main */
 
 
@@ -87,9 +95,12 @@ footer div {
 
 }
 footer div:nth-of-type(2) {
-  flex-basis: 40vw;
+  flex-basis: 50vw;
 }
 
+footer div:nth-of-type(3) {
+  flex-basis: 10vw;
+}
 
 
 /* //footer */
