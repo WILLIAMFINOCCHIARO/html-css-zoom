@@ -131,15 +131,11 @@ footer {
 }
 
 
-footer div {
+footer .barfoot {
+  display: flex;
   flex-grow: 0;
   flex-shrink: 0;
   flex-basis: 15vw;
-
-}
-
-footer .barfoot {
-  display: flex;
 }
 
 footer .barfoot.one,
@@ -150,19 +146,43 @@ footer .barfoot.two {
 
 /* prima barra a destra */
 
+footer .barfoot.one i {
+  font-size: 20px;
+}
 
 
-footer .barfoot.one {
+
+footer .barfoot.one,footer .barfoot.two {
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
+footer .barfoot.one div,
+footer .barfoot.two div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin:0 20px;
+}
 
-footer .barfoot.one i {
+footer .barfoot.one div span,
+footer .barfoot.two div span {
+  margin-top: 5px;
+  font-size: 10px;
+}
+
+
+
+footer .barfoot.one div i,
+footer .barfoot.two div i {
   font-size: 20px;
 }
 
+
+footer .barfoot.two .green i {
+  color:green;
+}
 /* // prima barra a destra */
 
 
@@ -170,17 +190,13 @@ footer .barfoot.one i {
 
 footer .barfoot.two {
   flex-basis: 50vw;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
 }
-
 
 
 /* // seconda barra centrale */
 
 
-/* terza barra centrale */
+/* terza barra laterale */
 
 footer .barfoot.three {
   flex-basis: 10vw;
@@ -192,7 +208,7 @@ footer .barfoot.three {
 }
 
 
-/* // terza barra centrale */
+/* // terza barra laterale */
 
 
 
