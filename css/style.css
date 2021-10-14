@@ -6,11 +6,50 @@
 
 /* settings layout */
 
+header {
+  height: 50px;
+}
 
-// settings layout
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+footer {
+  height: 100px;
+  background-color: gray;
+}
+
+/* // settings layout */
+
+
+/* start header */
+
+/* //header */
+
+/* start main */
+
+/* //main */
+
+/* start footer */
+
+/* //footer */
 
 /* debug */
 
+.debug header {
+  background-color: green;
+}
+
+.debug main {
+  background-color: black;
+}
+
+
+.debug footer {
+  background-color: red;
+
+}
 
 
 /* //debug */
