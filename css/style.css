@@ -53,6 +53,27 @@ header .bar-one,header .bar-two {
 
 /* start main */
 
+
+
+main .contenitor {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+main .contenitor .image {
+  width: calc(100% / 6);
+  flex-grow: 1;
+  flex-shrink: 1;
+  margin:0 5px 5px 0;
+}
+
+
+ 
 /* //main */
 
 
@@ -88,10 +109,19 @@ footer div:nth-of-type(2) {
   background-color: chocolate;
 }
 
+.debug main .simbol {
+  background-color: orange;
+}
+
+
 .debug main {
   background-color: black;
 }
 
+.debug main .contenitor .image {
+  background-color: crimson;
+  border: 1px solid white;
+}
 
 .debug footer {
   background-color: red;
