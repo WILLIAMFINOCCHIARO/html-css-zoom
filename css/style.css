@@ -94,13 +94,65 @@ footer div {
   flex-basis: 15vw;
 
 }
+
+footer .barfoot {
+  display: flex;
+}
+
+/* prima barra a destra */
+
+
+
+footer .barfoot.one {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+footer .barfoot.one i {
+  font-size: 20px;
+}
+
+/* // prima barra a destra */
+
+
+/* seconda barra centrale */
 footer div:nth-of-type(2) {
   flex-basis: 50vw;
 }
 
+footer .barfoot.two {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* // seconda barra centrale */
+
+
+/* terza barra centrale */
+
 footer div:nth-of-type(3) {
   flex-basis: 10vw;
 }
+
+
+footer .barfoot.three {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* // terza barra centrale */
+
+
+
+
 
 
 /* //footer */
