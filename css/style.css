@@ -69,13 +69,13 @@ header .bar {
 
 /* start main */
 
-/* lateral simbols  */
 
-/* lateral simbols  */
+main {
+  background-color: black;
+}
 
 main .contenitor {
   width: 90%;
-  height: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction:row;
@@ -90,12 +90,35 @@ main .contenitor .image {
   margin:0 5px 5px 0;
 }
 
+main .contenitor .image {
+  background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/1200px-Colosseo_2020.jpg");
+  background-size: cover;
+  background-position:center;
+}
+
+/* simboli laterali */
+
+
 main .simbol {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin:0 20px;
 }
+
+main .simbol i {
+  font-size: 50px;
+  color: gray;
+}
+
+main .simbol span {
+  font-size: 10px;
+  color: white;
+}
+
+
+/* //simboli laterali */
 
 /* //main */
 
@@ -103,6 +126,11 @@ main .simbol {
 
 
 /* start footer */
+footer {
+  background-color:  black;
+}
+
+
 footer div {
   flex-grow: 0;
   flex-shrink: 0;
@@ -113,6 +141,12 @@ footer div {
 footer .barfoot {
   display: flex;
 }
+
+footer .barfoot.one,
+footer .barfoot.two {
+  color: white;
+}
+
 
 /* prima barra a destra */
 
@@ -133,11 +167,9 @@ footer .barfoot.one i {
 
 
 /* seconda barra centrale */
-footer div:nth-of-type(2) {
-  flex-basis: 50vw;
-}
 
 footer .barfoot.two {
+  flex-basis: 50vw;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -150,17 +182,14 @@ footer .barfoot.two {
 
 /* terza barra centrale */
 
-footer div:nth-of-type(3) {
-  flex-basis: 10vw;
-}
-
-
 footer .barfoot.three {
+  flex-basis: 10vw;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  color: red;
+  background-color: gray;
 }
-
 
 
 /* // terza barra centrale */
@@ -183,15 +212,15 @@ footer .barfoot.three {
   background-color: green;
 } */
 
-.debug .bar {
+/* .debug .bar {
   background-color: chocolate;
 }
 
 .debug main .simbol {
   background-color: orange;
 }
-
-
+ */
+/* 
 .debug main {
   background-color: black;
 }
@@ -199,9 +228,9 @@ footer .barfoot.three {
 .debug main .contenitor .image {
   background-color: crimson;
   border: 1px solid white;
-}
+} */
 
-.debug footer {
+/* .debug footer {
   background-color: red;
 
 }
@@ -215,5 +244,5 @@ footer .barfoot.three {
 }
 .debug .barfoot.three {
   background-color: blue;
-}
+} */
 /* //debug */
