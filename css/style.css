@@ -11,6 +11,7 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  background-color: black;
 }
 
 body {
@@ -43,8 +44,22 @@ footer .barfoot {
 
 /* start header */
 
-header .bar-one,header .bar-two {
+header .bar.one,header .bar.two {
+  color: white;
+  font-weight: 300;
+  padding: 5px;
+  border-radius: 10px;
+  background-color:#353535;
   
+}
+
+header .bar i {
+  font-size: 20px;
+  margin:0 5px;
+}
+
+header .bar {
+  margin:0 5px;
 }
 
 /* //header */
@@ -164,9 +179,9 @@ footer .barfoot.three {
 
 /* debug */
 
-.debug header {
+/* .debug header {
   background-color: green;
-}
+} */
 
 .debug .bar {
   background-color: chocolate;
